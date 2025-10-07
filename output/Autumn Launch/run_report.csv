@@ -1,0 +1,181 @@
+campaign,product_id,product_name,market,aspect_ratio,source_image,output_path,legal_flags,brand_flags
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:placeholder,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:placeholder,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:placeholder,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:placeholder,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:placeholder,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:placeholder,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/US/sku-espresso-01_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/DE/sku-espresso-01_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,1:1,generated:stability,output/Autumn Launch/sku-espresso-01/1:1/JP/sku-espresso-01_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/US/sku-espresso-01_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/DE/sku-espresso-01_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,9:16,generated:stability,output/Autumn Launch/sku-espresso-01/9:16/JP/sku-espresso-01_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,US,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/US/sku-espresso-01_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,DE,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/DE/sku-espresso-01_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-espresso-01,Espresso Master 3000,JP,16:9,generated:stability,output/Autumn Launch/sku-espresso-01/16:9/JP/sku-espresso-01_16:9_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/US/sku-grinder-02_1:1_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/DE/sku-grinder-02_1:1_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,1:1,generated:stability,output/Autumn Launch/sku-grinder-02/1:1/JP/sku-grinder-02_1:1_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/US/sku-grinder-02_9:16_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/DE/sku-grinder-02_9:16_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,9:16,generated:stability,output/Autumn Launch/sku-grinder-02/9:16/JP/sku-grinder-02_9:16_JP.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,US,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/US/sku-grinder-02_16:9_US.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,DE,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/DE/sku-grinder-02_16:9_DE.png,,accent_not_detected
+Autumn Launch,sku-grinder-02,GrindPro Plus,JP,16:9,generated:stability,output/Autumn Launch/sku-grinder-02/16:9/JP/sku-grinder-02_16:9_JP.png,,accent_not_detected

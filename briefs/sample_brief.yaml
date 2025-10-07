@@ -1,0 +1,30 @@
+campaign_name: "Autumn Launch"
+brand_palette:
+  primary_hex: "#0B0B0B"
+  accent_hex: "#FFD700"
+brand_logo_path: "assets/logos/brand_logo.png"
+target_markets: [US, DE, JP]
+target_audience: "Young professionals who value quality and style"
+campaign_message:
+  en: "Meet the new standard."
+  de: "Lernen Sie den neuen Standard kennen."
+  ja: "新しいスタンダードへ。"
+
+products:
+  - id: "sku-espresso-01"
+    name: "Espresso Master 3000"
+    input_image: "assets/products/espresso.jpg"
+  - id: "sku-grinder-02"
+    name: "GrindPro Plus"
+    input_image: "assets/products/grinder.jpg"
+
+aspect_ratios: ["1:1", "9:16", "16:9"]
+legal_prohibited_words: ["free*", "guarantee*", "best price"]
+output_dir: "output"
+
+generator:
+  provider: "stability"   # options: placeholder | stability | sdxl | firefly
+  params:
+    prompt_template: "{name}: {hint}, studio lighting, product photography, high detail"
+
+
