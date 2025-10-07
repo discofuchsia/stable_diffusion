@@ -1,6 +1,19 @@
 # 🎨 Creative Automation Pipeline (POC)
 
 **Author:** [Jules Gerard](https://github.com/discofuchsia)  
+
+✨ Author
+
+Jules Gerard — Generative AI Engineer & Creative Technologist
+
+GitHub: @discofuchsia
+
+LinkedIn: linkedin.com/in/jules-gerard-ai23
+
+Email: discofuchsia@gmail.com
+
+“Blending design intuition with machine intelligence — building the next generation of creative tools.”
+
 **Focus:** Generative AI · Creative Automation · Python · Stability AI SDXL · Brand Intelligence  
 
 > “Turning briefs into brand-perfect visuals — automatically.”
@@ -162,18 +175,6 @@ Stability AI — SDXL v1 API
 Adobe Firefly — inspiration for creative automation
 
 Pillow · PyYAML · Requests — compositing foundation
-
-✨ Author
-
-Jules Gerard — Generative AI Engineer & Creative Technologist
-
-GitHub: @discofuchsia
-
-LinkedIn: linkedin.com/in/jules-gerard
-
-Email: discofuchsia@gmail.com
-
-“Blending design intuition with machine intelligence — building the next generation of creative tools.”
 
 🏁 License
 
