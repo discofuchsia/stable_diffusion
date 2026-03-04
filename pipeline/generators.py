@@ -21,7 +21,7 @@ def generate_image(
         w,h: Output canvas in pixels.
         product_name: For prompt or on-image label.
         hint: Textual description (lights, style, etc.).
-        provider_name: Optional override ('placeholder'|'sdxl'|'stability'|'firefly').
+        provider_name: Optional override ('placeholder'|'sdxl'|'stability'|'comfyui').
         params: Provider-specific knobs (prompt_template, steps, cfg, seed).
 
     Returns:
