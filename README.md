@@ -1,199 +1,131 @@
-# 🎨 Creative Automation Pipeline (POC)
+# 🎨 ComfyUI Production Pipeline
 
-**Author:** [Jules Gerard](https://github.com/discofuchsia)
+**Author:** [Jules Gerard](https://github.com/discofuchsia) — AI Video Engineer & Creative Technologist
 
-✨ Author
-
-Jules Gerard — Generative AI Engineer & Creative Technologist
-
-GitHub: @discofuchsia
-
-LinkedIn: linkedin.com/in/jules-gerard-ai23
-
-Email: discofuchsia@gmail.com
-
-"Blending design intuition with machine intelligence — building the next generation of creative tools."
-
-**Focus:** Generative AI · Creative Automation · Python · Stability AI SDXL · ComfyUI · Brand Intelligence
-
-> "Turning briefs into brand-perfect visuals — automatically."
+> "Node-based visual AI workflows — from prompt to production."
 
 ---
 
 ## 🚀 Overview
 
-This is a **Creative Automation Proof of Concept** — a production-style pipeline that converts structured campaign briefs into brand-compliant, AI-generated visuals using **Stable Diffusion XL**, **ComfyUI**, and **Python**.
+A **production-grade generative AI pipeline** built on **ComfyUI**, **Stable Diffusion XL**, and **Python**. This system powers automated visual content generation at enterprise scale — from text-to-image, image-to-image, to image-to-video workflows.
 
-It demonstrates how generative AI platforms can scale content generation for global marketing teams through automation, localization, and brand enforcement.
+Built from real-world experience generating visual content for 7,000+ brands at scale.
 
-> Imagine campaign assets updating themselves overnight — consistent, compliant, and creative.
-> This repo makes that vision real in code.
+### What This Does
 
----
-
-## 🧠 Core Capabilities
-
-| Capability | Description |
-| --- | --- |
-| 🧩 **Automated Asset Generation** | Reads YAML briefs and auto-generates images per product, market, and ratio. |
-| 🎨 **Stable Diffusion SDXL Integration** | Direct API calls to Stability AI's SDXL v1 endpoint with intelligent dimension snapping. |
-| 🖼️ **Dynamic Layout Engine** | Adds brand text, palette accents, and logos using Pillow. |
-| ✅ **Brand & Legal QA** | Runs automated compliance checks for palette and prohibited words. |
-| 🧾 **Structured Outputs** | Generates a consistent folder structure and CSV report for QA. |
-| ⚙️ **Smart Error Handling** | Automatically adapts illegal SDXL dimensions and resizes cleanly. |
-| 🧪 **Commented Codebase** | Every file includes detailed commentary for walkthroughs. |
+- **Text-to-Image**: SDXL generation with ControlNet composition control
+- **Image-to-Image**: Style transfer, brand consistency, img2img refinement
+- **Image-to-Video**: Wan2.2 (81 frames from a single image) via ComfyUI Cloud
+- **LoRA Fine-tuning**: Custom model adaptation for brand-specific styles
+- **Quality Pipeline**: Automated brand compliance, QA reporting, batch processing
 
 ---
 
-## 🏗️ Architecture
+## 🔧 ComfyUI Workflows
+
+### Text-to-Image (SDXL + ControlNet)
+```
+Load Checkpoint → CLIP Encode (prompt) → KSampler → VAE Decode → Save Image
+                                      ↑
+                        ControlNet (Canny/Depth/Pose)
+```
+- ControlNet types: Canny (edges), Depth (composition), OpenPose (characters)
+- CFG scale 7-8, cosine noise schedule, 25 steps
+
+### Image-to-Image (Style Transfer)
+```
+Load Image → VAE Encode → KSampler (denoise 0.4-0.6) → VAE Decode → Save
+                        ↑
+              ControlNet (maintain structure)
+```
+- Lower denoise = more faithful to source, higher = more creative
+
+### Image-to-Video (Wan2.2)
+```
+Load Image → Wan2.2 Model → 81 Frames → Frame Interpolation → Video Encode
+```
+- Temporal consistency via cross-frame attention
+- Output: MP4, configurable FPS and duration
+
+### LoRA Integration
+```
+Load Checkpoint → Load LoRA (weight 0.6-1.0) → CLIP Encode → KSampler → Output
+```
+- Training: 20-50 images, 1000-3000 steps, rank 4-32, lr 1e-4
+
+### Upscaling
+```
+Load Image → ESRGAN 4x → Tile Upscale → Color Correct → Sharpen → Save
+```
+
+---
+
+## 📁 Project Structure
 
 ```
 stable_diffusion/
-├── app.py                    # CLI entry point
-├── briefs/sample_brief.yaml  # Example marketing brief
-├── assets/
-│   ├── logos/brand_logo.png
-│   └── products/
+├── app.py                          # CLI orchestrator
+├── briefs/sample_brief.yaml        # Campaign brief template
 ├── pipeline/
-│   ├── generators.py
-│   ├── adapters.py
+│   ├── generators.py               # Provider routing & fallback logic
+│   ├── adapters.py                 # Dimension snapping & resizing
 │   ├── providers/
-│   │   ├── stability_api.py    # SDXL v1 + v2beta engines
-│   │   └── sdxl_diffusers.py   # Local Diffusers integration
-│   ├── layout.py
-│   ├── brand_checks.py
-│   ├── legal_checks.py
-│   └── reporting.py
-├── demo.sh                   # One-command demo
-├── VIDEO_DEMO_GUIDE.md       # 2–3 min narration guide
-└── README.md                 # (this file)
+│   │   ├── comfyui_api.py          # ComfyUI Cloud API integration
+│   │   ├── stability_api.py        # Stability AI SDXL API
+│   │   └── sdxl_diffusers.py       # Local HuggingFace Diffusers
+│   ├── layout.py                   # Brand overlay compositing
+│   ├── brand_checks.py             # Palette & compliance validation
+│   └── reporting.py                # CSV QA report generation
+├── train_diffusion.py              # Train DDPM from scratch
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## 💡 Vision
-
-Creative teams waste hours generating endless ad variations.
-This project blends **AI creativity** with **brand control**, automating asset creation while keeping every output on-brand.
-
-Built for:
-
-* **Generative design workflows at scale**
-* **Responsible, brand-safe AI content**
-* **Automated localization & multi-market scaling**
-
----
-
-## ⚙️ Quickstart
-
-### 1️⃣ Environment Setup
+## ⚡ Quickstart
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+git clone https://github.com/discofuchsia/stable_diffusion.git
+cd stable_diffusion
+python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-pip install -r requirements-extras.txt
-```
 
-### 2️⃣ Run the Demo
-
-```bash
-bash demo.sh
-```
-
-or manually:
-
-```bash
+# Generate from brief
 python app.py briefs/sample_brief.yaml
+
+# Train diffusion model from scratch
+python train_diffusion.py --dataset mnist --epochs 50 --cfg
 ```
 
-### 3️⃣ Output Example
+---
 
-```
-output/
-└── Autumn Launch/
-    ├── sku-espresso-01/
-    │   ├── 1:1/US/sku-espresso-01_1:1_US.png
-    │   ├── 9:16/DE/sku-espresso-01_9:16_DE.png
-    │   └── 16:9/JP/sku-espresso-01_16:9_JP.png
-    ├── sku-grinder-02/
-    └── run_report.csv
-```
+## 🧪 Diffusion Training (from scratch)
 
-Each asset includes:
-
-- Localized message
-- Brand palette overlay
-- Logo placement
-- Automatic metadata logging
+`train_diffusion.py` implements a complete DDPM with:
+- **Forward process**: Gaussian noise addition with cosine schedule
+- **U-Net**: Encoder/bottleneck/decoder with time embeddings and skip connections
+- **Loss**: MSE on noise prediction
+- **Sampling**: Full DDPM (1000 steps)
+- **Classifier-free guidance**: 10% unconditional dropout, guided inference
+- **Datasets**: MNIST, CIFAR-10
 
 ---
 
-## 🧬 Stability AI Setup
+## 🎬 Portfolio
 
-```bash
-export STABILITY_API_HOST=https://api.stability.ai
-export STABILITY_API_KEY=sk-yourkey
-export STABILITY_ENGINE=stable-diffusion-xl-1024-v1-0
-```
-
-The pipeline auto-snaps to SDXL's legal resolutions (e.g. 1344×768, 768×1344, 1024×1024) and resizes back to your target canvas for flawless output.
+- **AI Video Reel:** [youtu.be/IPY8PrRrpGc](https://youtu.be/IPY8PrRrpGc)
+- **DreamWorks Animation:** 7 major features including Puss in Boots, Trolls, How to Train Your Dragon
 
 ---
 
-## 🧑‍💻 Code Walkthrough
+## 🛠️ Built With
 
-| File | Talking Points |
-| --- | --- |
-| `app.py` | Orchestrates brief parsing and generation flow. |
-| `pipeline/generators.py` | Decides which provider to use and handles fallbacks. |
-| `providers/stability_api.py` | Integrates SDXL v1 + v2beta APIs, handling legal sizes and retries. |
-| `layout.py` | Handles creative composition — text and brand placement. |
-| `brand_checks.py` | Validates logo, palette, and compliance. |
-| `reporting.py` | Logs all creative data to CSV for QA. |
+**Generation:** Stable Diffusion XL · ComfyUI · ControlNet · Wan2.2 · ESRGAN
+**ML:** PyTorch · LoRA · Diffusers · sentence-transformers
+**Infrastructure:** Python · Docker · Azure · AWS · REST APIs
 
 ---
 
-## 🎥 Demo Video
-
-Record or build a 2–3 minute demo following `VIDEO_DEMO_GUIDE.md`.
-
-Scenes:
-
-1. YAML brief + terminal run
-2. SDXL generation in action
-3. Output folder + sample creatives
-4. CSV report summary
-5. Outro with your GitHub link
-
-🎬 "From YAML to final asset — AI-driven Creative Automation."
-
----
-
-## 🧩 Roadmap
-
-- 🔗 Integrate ComfyUI node-based workflows for advanced img2img and ControlNet pipelines
-- 🧱 Add Streamlit dashboard for creative QA
-- ☁️ Connect to Azure Blob or S3 for enterprise delivery
-- 🧮 Add prompt templating and metadata tagging
-- 🧠 Include semantic brand safety scoring
-
----
-
-## ❤️ Credits
-
-- **Stability AI** — SDXL v1 API
-- **ComfyUI** — Node-based generative workflow inspiration
-- **Pillow · PyYAML · Requests** — compositing foundation
-
----
-
-## 🏁 License
-
-Released under the **MIT License** — free for experimentation and creative exploration.
-
----
-
-## 🧠 Keywords
-
-`Generative AI` · `Stability AI` · `ComfyUI` · `Creative Automation` · `Stable Diffusion` · `Marketing Tech` · `Brand Intelligence` · `Pillow` · `Python`
+**Keywords:** ComfyUI · Stable Diffusion · ControlNet · Wan2.2 · LoRA · Diffusion Models · Creative Automation · Python · PyTorch
