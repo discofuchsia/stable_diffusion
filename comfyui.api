@@ -1,0 +1,286 @@
+"""
+ComfyUI Cloud API Provider
+===========================
+Integrates with ComfyUI Cloud for production image/video generation.
+
+This provider enables programmatic execution of ComfyUI workflows:
+1. Submit a workflow JSON to the ComfyUI API
+2. Poll for completion
+3. Download generated assets
+
+WHY COMFYUI CLOUD:
+- Node-based visual pipelines that non-technical stakeholders can see and direct
+- Supports any model: SDXL, ControlNet, LoRA, Wan2.2, ESRGAN
+- Handles GPU scaling automatically
+- REST API for integration into production pipelines
+
+WORKFLOW EXECUTION PATTERN:
+    workflow JSON → queue prompt → poll status → download outputs
+"""
+
+import os
+import json
+import time
+import requests
+from typing import Dict, Optional, List
+
+
+class ComfyUIProvider:
+    """
+    Production client for ComfyUI Cloud API.
+    
+    Usage:
+        provider = ComfyUIProvider()
+        result = provider.generate(
+            workflow_path="workflows/txt2img_sdxl_controlnet.json",
+            overrides={"prompt": "a cowboy at sunset", "seed": 42}
+        )
+        provider.download(result["output_url"], "output/image.png")
+    """
+    
+    def __init__(self, api_url: str = None, api_key: str = None):
+        """
+        Initialize the ComfyUI Cloud client.
+        
+        Args:
+            api_url: ComfyUI Cloud endpoint (or COMFYUI_API_URL env var)
+            api_key: API key for authentication (or COMFYUI_API_KEY env var)
+        """
+        self.api_url = api_url or os.getenv("COMFYUI_API_URL", "http://localhost:8188")
+        self.api_key = api_key or os.getenv("COMFYUI_API_KEY", "")
+        self.headers = {
+            "Content-Type": "application/json",
+        }
+        if self.api_key:
+            self.headers["Authorization"] = f"Bearer {self.api_key}"
+    
+    def load_workflow(self, workflow_path: str) -> Dict:
+        """
+        Load a ComfyUI workflow JSON file.
+        
+        Workflows are exported from the ComfyUI visual editor.
+        Each node in the workflow is a processing step:
+        - Load Checkpoint (model selection)
+        - CLIP Text Encode (prompt → embeddings)
+        - KSampler (the actual diffusion process)
+        - VAE Decode (latent → image)
+        - Save Image (output)
+        """
+        with open(workflow_path, "r") as f:
+            return json.load(f)
+    
+    def apply_overrides(self, workflow: Dict, overrides: Dict) -> Dict:
+        """
+        Override specific values in the workflow.
+        
+        This is how we parameterize workflows:
+        - Change the prompt text
+        - Set a specific seed for reproducibility
+        - Adjust CFG scale, steps, denoise strength
+        - Swap models or LoRAs
+        
+        Args:
+            workflow: The loaded workflow dict
+            overrides: Key-value pairs to override
+                {
+                    "prompt": "a cowboy at sunset",
+                    "negative_prompt": "blurry, low quality",
+                    "seed": 42,
+                    "cfg_scale": 7.5,
+                    "steps": 25,
+                    "denoise": 0.75,
+                    "lora_name": "brand_style_v2.safetensors",
+                    "lora_weight": 0.8,
+                    "controlnet_image": "path/to/reference.png",
+                }
+        """
+        workflow = json.loads(json.dumps(workflow))  # deep copy
+        
+        for node_id, node in workflow.items():
+            class_type = node.get("class_type", "")
+            inputs = node.get("inputs", {})
+            
+            # Override positive prompt
+            if class_type == "CLIPTextEncode" and "prompt" in overrides:
+                if "positive" in str(node_id).lower() or inputs.get("text", "").strip():
+                    inputs["text"] = overrides["prompt"]
+            
+            # Override negative prompt
+            if class_type == "CLIPTextEncode" and "negative_prompt" in overrides:
+                if "negative" in str(node_id).lower():
+                    inputs["text"] = overrides["negative_prompt"]
+            
+            # Override KSampler parameters
+            if class_type == "KSampler":
+                if "seed" in overrides:
+                    inputs["seed"] = overrides["seed"]
+                if "cfg_scale" in overrides:
+                    inputs["cfg"] = overrides["cfg_scale"]
+                if "steps" in overrides:
+                    inputs["steps"] = overrides["steps"]
+                if "denoise" in overrides:
+                    inputs["denoise"] = overrides["denoise"]
+            
+            # Override LoRA
+            if class_type == "LoraLoader":
+                if "lora_name" in overrides:
+                    inputs["lora_name"] = overrides["lora_name"]
+                if "lora_weight" in overrides:
+                    inputs["strength_model"] = overrides["lora_weight"]
+                    inputs["strength_clip"] = overrides["lora_weight"]
+        
+        return workflow
+    
+    def queue_prompt(self, workflow: Dict) -> str:
+        """
+        Submit a workflow to the ComfyUI queue.
+        
+        Returns:
+            prompt_id: Unique ID for tracking this generation job
+        """
+        payload = {"prompt": workflow}
+        
+        try:
+            response = requests.post(
+                f"{self.api_url}/prompt",
+                json=payload,
+                headers=self.headers,
+                timeout=30,
+            )
+            response.raise_for_status()
+            data = response.json()
+            return data["prompt_id"]
+        except requests.exceptions.RequestException as e:
+            raise ConnectionError(f"Failed to queue prompt: {e}")
+    
+    def poll_status(self, prompt_id: str, timeout: int = 300, interval: int = 2) -> Dict:
+        """
+        Poll the ComfyUI API until the workflow completes.
+        
+        Args:
+            prompt_id: The job ID from queue_prompt()
+            timeout: Maximum wait time in seconds
+            interval: Polling interval in seconds
+        
+        Returns:
+            Status dict with output information
+        """
+        start_time = time.time()
+        
+        while time.time() - start_time < timeout:
+            try:
+                response = requests.get(
+                    f"{self.api_url}/history/{prompt_id}",
+                    headers=self.headers,
+                    timeout=10,
+                )
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    if prompt_id in data:
+                        status = data[prompt_id].get("status", {})
+                        if status.get("completed", False):
+                            return data[prompt_id]
+                        if status.get("status_str") == "error":
+                            raise RuntimeError(
+                                f"Workflow failed: {status.get('messages', 'Unknown error')}"
+                            )
+            except requests.exceptions.RequestException:
+                pass  # Retry on connection errors
+            
+            time.sleep(interval)
+        
+        raise TimeoutError(f"Workflow {prompt_id} timed out after {timeout}s")
+    
+    def get_output_urls(self, history: Dict) -> List[str]:
+        """
+        Extract output image/video URLs from completed workflow history.
+        """
+        urls = []
+        outputs = history.get("outputs", {})
+        
+        for node_id, node_output in outputs.items():
+            if "images" in node_output:
+                for img in node_output["images"]:
+                    filename = img.get("filename", "")
+                    subfolder = img.get("subfolder", "")
+                    url = f"{self.api_url}/view?filename={filename}&subfolder={subfolder}"
+                    urls.append(url)
+            if "gifs" in node_output:  # Video outputs
+                for vid in node_output["gifs"]:
+                    filename = vid.get("filename", "")
+                    url = f"{self.api_url}/view?filename={filename}"
+                    urls.append(url)
+        
+        return urls
+    
+    def download(self, url: str, output_path: str) -> str:
+        """
+        Download a generated asset from ComfyUI.
+        """
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        
+        response = requests.get(url, headers=self.headers, timeout=60)
+        response.raise_for_status()
+        
+        with open(output_path, "wb") as f:
+            f.write(response.content)
+        
+        return output_path
+    
+    def generate(
+        self,
+        workflow_path: str,
+        overrides: Dict = None,
+        output_dir: str = "output",
+    ) -> List[str]:
+        """
+        Full generation pipeline: load → override → queue → poll → download.
+        
+        This is the main entry point for production use.
+        
+        Args:
+            workflow_path: Path to ComfyUI workflow JSON
+            overrides: Parameter overrides (prompt, seed, etc.)
+            output_dir: Where to save generated assets
+        
+        Returns:
+            List of local file paths for generated assets
+        """
+        # 1. Load workflow
+        workflow = self.load_workflow(workflow_path)
+        
+        # 2. Apply overrides
+        if overrides:
+            workflow = self.apply_overrides(workflow, overrides)
+        
+        # 3. Queue the workflow
+        prompt_id = self.queue_prompt(workflow)
+        print(f"  Queued workflow: {prompt_id}")
+        
+        # 4. Wait for completion
+        history = self.poll_status(prompt_id)
+        print(f"  Workflow completed.")
+        
+        # 5. Download outputs
+        urls = self.get_output_urls(history)
+        local_paths = []
+        
+        for i, url in enumerate(urls):
+            ext = "mp4" if "gif" in url else "png"
+            path = os.path.join(output_dir, f"{prompt_id}_{i}.{ext}")
+            self.download(url, path)
+            local_paths.append(path)
+            print(f"  Downloaded: {path}")
+        
+        return local_paths
+
+
+# ═══════════════════════════════════════════════════════════
+# STANDALONE TEST
+# ═══════════════════════════════════════════════════════════
+
+if __name__ == "__main__":
+    provider = ComfyUIProvider()
+    print(f"ComfyUI API: {provider.api_url}")
+    print("Provider initialized. Use generate() to run workflows.")
